@@ -13,6 +13,8 @@ dist-ssr
 *.local
 Microsoft/
 .vercel
+.npm-cache/
+vercel-login.*
 
 # Editor directories and files
 .vscode/*
@@ -24,3 +26,4 @@ Microsoft/
 *.njsproj
 *.sln
 *.sw?
+.vercel
