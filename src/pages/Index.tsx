@@ -111,7 +111,7 @@ const sectionData = {
     {
       id: 5,
       title: "Modular Tachometer System",
-      description: "Designed and manufactured a custom tachometer enclosure and wiring harness system for Tigercat harvesting head testing, enabling rapid and reliable RPM measurement across multiple hydraulic components. Modeled the enclosure in SolidWorks and produced it through 3D printing, while creating custom harness drawings and integrating the required laser sensor wiring into a compact, field-ready package. The completed system supported up to **four interchangeable tachometer sensors**, improving testing efficiency, simplifying machine instrumentation, and providing a reusable solution for drivetrain validation and performance analysis.",
+      description: "Designed and manufactured a custom tachometer enclosure and wiring harness system for Tigercat harvesting head testing, enabling rapid and reliable RPM measurement across multiple hydraulic components. Modeled the enclosure in SolidWorks and produced it through 3D printing, while creating custom harness drawings and integrating the required laser sensor wiring into a compact, field-ready package. The completed system supported up to four interchangeable tachometer sensors, improving testing efficiency, simplifying machine instrumentation, and providing a reusable solution for drivetrain validation and performance analysis.",
       tech: ["SolidWorks", "3D printing", "Harnesses", "Electrical Drawing", "Routing"],
       //link: "github.com/kayne-lee/NumerAI-Model",
       images: ["tach1.png","tach2.png"]
@@ -127,7 +127,7 @@ const sectionData = {
     {
        id: 7,
       title: "Assembly Kickstands",
-      description: "Designed and engineered a series of **assembly kickstands** for Tigercat manufacturing operations to safely support heavy machine components during production and assembly. Performed **finite element analysis (FEA)** to validate structural performance, evaluate stress distribution, and optimize the design prior to fabrication, ensuring an appropriate factor of safety under expected loading conditions. Following validation, I produced detailed manufacturing drawings, coordinated fabrication and assembly, and successfully delivered a production-ready design that was **mass manufactured and deployed across multiple Tigercat facilities**, standardizing assembly operations and improving shop-floor safety and efficiency.",
+      description: "Designed and engineered a series of assembly kickstands for Tigercat manufacturing operations to safely support heavy machine components during production and assembly. Performed finite element analysis (FEA) to validate structural performance, evaluate stress distribution, and optimize the design prior to fabrication, ensuring an appropriate factor of safety under expected loading conditions. Following validation, I produced detailed manufacturing drawings, coordinated fabrication and assembly, and successfully delivered a production-ready design that was mass manufactured and deployed across multiple Tigercat facilities, standardizing assembly operations and improving shop-floor safety and efficiency.",
       tech: ["Weldment", "FEA", "DFMA", "Mechanical Drawing"],
       //link: "github.com/kayne-lee/NumerAI-Model",
       images: ["kick1.jpg","kick2.jpg","kick3.jpg"]
