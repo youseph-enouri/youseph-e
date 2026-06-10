@@ -1,0 +1,121 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 24 18% 13%;
+
+    --card: 40 30% 99%;
+    --card-foreground: 24 18% 13%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 10%;
+
+    --primary: 24 18% 13%;
+    --primary-foreground: 40 30% 99%;
+
+    --secondary: 34 24% 93%;
+    --secondary-foreground: 24 18% 18%;
+
+    --muted: 34 20% 94%;
+    --muted-foreground: 25 9% 43%;
+
+    --accent: 22 72% 25%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 30 18% 86%;
+    --input: 30 18% 86%;
+    --ring: 22 72% 25%;
+
+    --radius: 0.5rem;
+
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-modal: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .dark {
+    --background: 0 0% 5%;
+    --foreground: 0 0% 95%;
+
+    --card: 0 0% 8%;
+    --card-foreground: 0 0% 95%;
+
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 95%;
+
+    --primary: 0 0% 95%;
+    --primary-foreground: 0 0% 10%;
+
+    --secondary: 0 0% 12%;
+    --secondary-foreground: 0 0% 95%;
+
+    --muted: 0 0% 12%;
+    --muted-foreground: 0 0% 60%;
+
+    --accent: 215 70% 55%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+    --ring: 215 70% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    overflow-x: clip;
+    background-image:
+      radial-gradient(circle at 8% 0%, hsl(var(--accent) / 0.07), transparent 28rem),
+      radial-gradient(circle at 92% 100%, hsl(35 65% 78% / 0.18), transparent 30rem);
+    background-attachment: fixed;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-serif;
+  }
+
+  ::selection {
+    background: hsl(var(--accent) / 0.18);
+  }
+}
+
+@layer utilities {
+  .transition-smooth {
+    transition: var(--transition-smooth);
+  }
+
+  .transition-modal {
+    transition: var(--transition-modal);
+  }
+
+  .content-panel {
+    @apply rounded-2xl border border-border/80 bg-card/80 p-5 shadow-[0_12px_36px_-28px_hsl(var(--foreground)/0.35)] sm:p-6;
+  }
+
+  .content-image {
+    @apply overflow-hidden rounded-2xl border border-border/70 bg-white shadow-sm;
+  }
+
+  .subtle-scrollbar {
+    scrollbar-color: hsl(var(--border)) transparent;
+    scrollbar-width: thin;
+  }
+}
